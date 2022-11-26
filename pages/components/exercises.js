@@ -14,7 +14,6 @@ const Exercises = ({ bodyPart, exercises, setExercises, currentPage, setCurrentP
         }
         fetchData()
     }, [bodyPart, setExercises, searchResult])
-    console.log(searchResult)
     const indexOfLastCard = currentPage * cardsPerPage;
     const indexOfFirstCard = indexOfLastCard - cardsPerPage;
     const currentCards = exercises.slice(indexOfFirstCard, indexOfLastCard);
@@ -42,14 +41,14 @@ const Exercises = ({ bodyPart, exercises, setExercises, currentPage, setCurrentP
                                 </div>
                                 <div className="px-6 pt-4 pb-2">
                                     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                                        {exercise.target}
+                                        #{exercise.target}
                                     </span>
                                 </div>
                             </div>
                         )
                     })}
                 </div>
-                <Pagination cardsPerPage={cardsPerPage} totalCards={exercises.length} paginate={paginate} currentPage={currentPage}/>
+                <Pagination cardsPerPage={cardsPerPage} totalCards={exercises.length} paginate={paginate} currentPage={currentPage} indexOfFirstCard={indexOfFirstCard} indexOfLastCard={indexOfLastCard}/>
             </div>:
             <div className='h-fit justify-center flex flex-col items-center'>
                 <img src='/no-exercises.svg' alt='notfound' className='p-10'/>
