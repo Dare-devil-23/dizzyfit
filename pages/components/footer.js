@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
             <div className="w-full min-h-fit flex items-center justify-center bg-black">
                 <div className="mx-1 md:mx-20 my-10 w-full px-4 text-white flex flex-col">
-                    <div className="w-full text-7xl font-bold">
+                    <div className="w-full text-6xl font-bold">
                         <h1 className="w-full md:w-3/4 2xl:w-3/5">
                             How can we help you. get in touch
                         </h1>
@@ -28,7 +28,7 @@ export default function Footer() {
                                 whileHover={{scale:1.2}}
                                 whileTap={{scale:0.8}}
                             >
-                                <Link href="/" className='text-red-600'>DIZZYFIT</Link>
+                                <Link href="/" className='text-red-600'>DF</Link>
                             </motion.h2>
                             <motion.div className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
                                 whileHover={{scale:1.2}}

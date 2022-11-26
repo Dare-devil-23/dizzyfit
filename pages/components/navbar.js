@@ -11,11 +11,11 @@ export default function NavBar() {
                     <div className="flex items-center justify-between py-5 md:py-5 md:block">
                         <Link href="/">
                             <motion.h2 
-                                className="flex px-5 text-3xl font-bold 2xl:text-5xl text-red-600"
+                                className="flex px-5 text-5xl font-bold 2xl:text-5xl text-red-600"
                                 whileTap={{ scale: 0.8 }}
                                 whileHover={{ scale: 1.2 }}
                             >
-                                DIZZYFIT
+                                DF
                             </motion.h2>
                         </Link>
                         <div className="md:hidden">
