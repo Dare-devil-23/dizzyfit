@@ -24,11 +24,11 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col">
                         <div className="flex mt-24 mb-12 flex-row justify-between">
-                            <motion.h2 className="text-3xl 2xl:text-7xl"
+                            <motion.h2 className="text-3xl 2xl:text-5xl"
                                 whileHover={{scale:1.2}}
                                 whileTap={{scale:0.8}}
                             >
-                                <Link href="/" >LOGO</Link>
+                                <Link href="/" className='text-red-600'>DIZZYFIT</Link>
                             </motion.h2>
                             <motion.div className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
                                 whileHover={{scale:1.2}}

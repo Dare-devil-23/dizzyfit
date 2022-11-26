@@ -1,4 +1,4 @@
-import React , { useState } from 'react'
+import React , { useState , useEffect} from 'react'
 import { motion } from "framer-motion"
 import FlowText from './components/flowtext'
 import Search from './components/search'
@@ -16,9 +16,10 @@ const bodyParts = [
 ];
 
 const LandingPage = () => {
-  const [bodyPart, setBodyPart] = useState('waist')
+  const [bodyPart, setBodyPart] = useState(bodyParts[0])
   const [exercises , setExercises] = useState([])
-  const [currentPage, setCurrentPage]  = useState(1);
+  const [currentPage, setCurrentPage]  = useState(1)
+  const [searchResult, setSearchResult] = useState([])
   return (
     <div className='w-full min-h-screen'>
       <video src='/dailyworkout.mp4' autoPlay loop muted className='w-full h-screen object-cover' />
@@ -44,11 +45,11 @@ const LandingPage = () => {
         }}
       >
         <h1 className='text-[70px] md:text-[100px] 2xl:text-[170px]'>Workout <span className='text-red-600'>D</span>aily</h1>
-        <p className='my-5 2xl:text-xl'>Because, it is another day to become better!</p>
+        <p className='my-5 text-xl 2xl:text-2xl'>Because, it is another day to become better!</p>
       </motion.div>
       <FlowText />
-      <Search bodyPart={bodyPart} setBodyPart={setBodyPart} bodyParts={bodyParts} setCurrentPage={setCurrentPage}/>
-      <Exercises bodyPart={bodyPart} exercises={exercises} setExercises={setExercises} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+      <Search bodyPart={bodyPart} setBodyPart={setBodyPart} bodyParts={bodyParts} setCurrentPage={setCurrentPage} searchResult={searchResult} setSearchResult={setSearchResult}/>
+      <Exercises bodyPart={bodyPart} exercises={exercises} setExercises={setExercises} currentPage={currentPage} setCurrentPage={setCurrentPage} searchResult={searchResult} />
     </div>
   )
 }

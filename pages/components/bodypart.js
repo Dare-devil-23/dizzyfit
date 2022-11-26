@@ -9,6 +9,7 @@ const BodyPart = (props) => {
       onClick={()=>{
         props.setBodyPart(props.part)
         props.setCurrentPage(1)
+        props.setSearchResult([])
       }}
     >
       <div className="text-md lg:text-lg 2xl:text-xl font-normal leading-none max-w-full flex-initial">
