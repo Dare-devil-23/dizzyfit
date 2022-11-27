@@ -17,7 +17,7 @@ export default function Footer() {
                             To ensure that all Wikipedia content is verifiable, anyone may question an uncited claim. If your work has been tagged
                         </p>
                         <div className="w-44 pt-6 md:pt-0" id="#contact">
-                            <Link href="/contact" className="bg-red-600 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">
+                            <Link href="/contact" className="bg-red-600 hover:bg-red-500 justify-center text-center rounded-full shadow px-10 py-3 flex items-center">
                                 Contact US
                             </Link>
                         </div>
