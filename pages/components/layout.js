@@ -3,7 +3,7 @@ import Footer from './footer'
 
 export default function Layout({ children }) {
   return (
-    <div className='font-Specialelite'>
+    <div className='font-Specialelite select-none'>
       <NavBar />
         <main className='min-h-screen text-white flex justify-center items-center bg-black'>{children}</main>
       <Footer />

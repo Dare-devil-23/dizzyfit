@@ -54,8 +54,8 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 export default function FlowText() {
   return (
     <section >
-      <ParallaxText baseVelocity={-2}>No Pain No Gain Push Through The Pain</ParallaxText>
-      <ParallaxText baseVelocity={2}>Nothing Will Work Unless You Do</ParallaxText>
+      <ParallaxText baseVelocity={-2}>&nbsp;&nbsp; No Pain No Gain Push Through The Pain </ParallaxText>
+      <ParallaxText baseVelocity={2}>&nbsp;&nbsp; Nothing Will Work Unless You Do </ParallaxText>
     </section>
   );
 }

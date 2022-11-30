@@ -44,7 +44,7 @@ const LandingPage = () => {
           ease: [0, 0.71, 0.2, 1.01]
         }}
       >
-        <h1 className='text-[70px] md:text-[100px] 2xl:text-[170px]'>Workout <span className='text-red-600'>D</span>aily</h1>
+        <h1 className='text-[70px] md:text-[100px] 2xl:text-[170px]'><span className='text-red-600'>W</span>orkout <span className='text-red-600'>D</span>aily</h1>
         <p className='my-5 text-xl 2xl:text-2xl'>Because, it is another day to become better!</p>
       </motion.div>
       <FlowText />

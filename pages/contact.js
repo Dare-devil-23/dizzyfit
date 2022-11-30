@@ -45,20 +45,20 @@ const Contact = () => {
                 </div>
               </div>
 
-              <form className="px-6 flex flex-col justify-around">
+              <form className="px-6 m-3 flex flex-col justify-around">
                 <div className="flex flex-col">
                   <label for="name" className="hidden">Full Name</label>
-                  <input type="name" name="name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3 rounded-lg bg-zinc-900 border border-gray-400 text-gray-800 font-semibold focus:border-gray-600 focus:outline-none" />
+                  <input type="name" name="name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3 rounded-lg bg-zinc-900 border border-gray-400 text-gray-800 font-semibold focus:outline-none" />
                 </div>
 
                 <div className="flex flex-col mt-2">
                   <label for="email" className="hidden">Email</label>
-                  <input type="email" name="email" id="email" placeholder="Email" className="w-100 mt-2 py-3 px-3 rounded-lg bg-zinc-900 border border-gray-400 text-gray-800 font-semibold focus:border-gray-600 focus:outline-none" />
+                  <input type="email" name="email" id="email" placeholder="Email" className="w-100 mt-2 py-3 px-3 rounded-lg bg-zinc-900 border border-gray-400 text-gray-800 font-semibold focus:outline-none" />
                 </div>
 
                 <div className="flex flex-col mt-2">
                   <label for="tel" className="hidden">Number</label>
-                  <input type="tel" name="tel" id="tel" placeholder="Telephone Number" className="w-100 mt-2 py-3 px-3 rounded-lg bg-zinc-900 border border-gray-400 text-gray-800 font-semibold focus:border-gray-600 focus:outline-none" />
+                  <input type="tel" name="tel" id="tel" placeholder="Telephone Number" className="w-100 mt-2 py-3 px-3 rounded-lg bg-zinc-900 border border-gray-400 text-gray-800 font-semibold focus:outline-none" />
                 </div>
 
                 <button type="submit" className=" bg-red-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-10 hover:bg-red-500 transition ease-in-out duration-300">

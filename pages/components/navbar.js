@@ -1,9 +1,18 @@
-import React , {useState} from 'react'
+import React , {useEffect, useState} from 'react'
 import { motion } from "framer-motion"
 import  Link  from 'next/link'
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
+    const [isMobile , setIsMobbile] = useState(false);
+    navbar ? disableBodyScroll(global.document) : enableBodyScroll(global.document);
+    useEffect(()=>{
+        window.addEventListener('resize', ()=> {
+            window.innerWidth < 770 ? setIsMobbile(true) : setIsMobbile(false);
+        })
+        return () => window.removeEventListener('resize', ()=>{});
+     }, [])
     return (
         <nav className="w-full text-white absolute z-10">
             <div className="justify-between 2xl:text-2xl md:items-center md:flex md:px-8">
@@ -23,7 +32,6 @@ export default function NavBar() {
                                 className="p-2 text-white rounded-md outline-none"
                                 onClick={() => {
                                     setNavbar(!navbar)
-                                    console.log(navbar)
                                 }}
                             >
                                 {navbar ? (
@@ -66,26 +74,46 @@ export default function NavBar() {
                         }`}
                     >
                         <ul className="w-full h-1/2 md:h-full flex flex-col md:flex-row justify-evenly items-center">
-                            <motion.li className="hover:text-red-600"
-                                whileHover={{scale:1.2}}
-                                whileTap={{scale:0.8}}>
-                                <Link href="/">Home</Link>
-                            </motion.li>
-                            <motion.li className="hover:text-red-600"
-                                whileHover={{scale:1.2}}
-                                whileTap={{scale:0.8}}>
-                                <Link href="/blog">Blog</Link>
-                            </motion.li>
-                            <motion.li className="hover:text-red-600"
-                                whileHover={{scale:1.2}}
-                                whileTap={{scale:0.8}}>
-                                <Link href="/about">About US</Link>
-                            </motion.li>
-                            <motion.li className="hover:text-red-600"
-                                whileHover={{scale:1.2}}
-                                whileTap={{scale:0.8}}>
-                                <Link href="/contact">Contact US</Link>
-                            </motion.li>
+                            <Link href="/">
+                                <motion.li className="hover:text-red-600"
+                                    whileHover={{scale:1.2}}
+                                    whileTap={{scale:0.8}}
+                                    onClick={() => {
+                                        isMobile ? setNavbar(!navbar) : ''
+                                    }}>
+                                    Home
+                                </motion.li>
+                            </Link>
+                            <Link href="/blog">
+                                <motion.li className="hover:text-red-600"
+                                    whileHover={{scale:1.2}}
+                                    whileTap={{scale:0.8}}
+                                    onClick={() => {
+                                        isMobile ? setNavbar(!navbar) : ''
+                                    }}>
+                                    Blog
+                                </motion.li>
+                            </Link>
+                            <Link href="/about">
+                                <motion.li className="hover:text-red-600"
+                                    whileHover={{scale:1.2}}
+                                    whileTap={{scale:0.8}}
+                                    onClick={() => {
+                                        isMobile ? setNavbar(!navbar) : ''
+                                    }}>
+                                    About US
+                                </motion.li>
+                            </Link>
+                            <Link href="/contact">
+                                <motion.li className="hover:text-red-600"
+                                    whileHover={{scale:1.2}}
+                                    whileTap={{scale:0.8}}
+                                    onClick={() => {
+                                        isMobile ? setNavbar(!navbar) : ''
+                                    }}>
+                                    Contact US
+                                </motion.li>
+                            </Link>
                         </ul>
                     </div>
                 </div>

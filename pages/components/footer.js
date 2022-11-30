@@ -24,36 +24,46 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col">
                         <div className="flex mt-24 mb-12 flex-row justify-between">
-                            <motion.h2 className="text-3xl 2xl:text-5xl"
-                                whileHover={{scale:1.2}}
-                                whileTap={{scale:0.8}}
-                            >
-                                <Link href="/" className='text-red-600'>DF</Link>
-                            </motion.h2>
-                            <motion.div className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
-                                whileHover={{scale:1.2}}
-                                whileTap={{scale:0.8}}    
-                            >
-                                <Link href='/about'>About</Link>
-                            </motion.div>
-                            <motion.div className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
-                                whileHover={{scale:1.2}}
-                                whileTap={{scale:0.8}}    
-                            >
-                                <Link href='/blog'>Blog</Link>
-                            </motion.div>
-                            <motion.div className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
-                                whileHover={{scale:1.2}}
-                                whileTap={{scale:0.8}}    
-                            >
-                                <Link href='/privacy'>Privacy</Link>
-                            </motion.div>
-                            <motion.div  className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
-                                whileHover={{scale:1.2}}
-                                whileTap={{scale:0.8}}    
-                            >
-                                <Link href='/terms'>Terms</Link>
-                            </motion.div>
+                            <Link href="/" className='text-red-600'>
+                                <motion.h2 className="text-3xl 2xl:text-5xl"
+                                    whileHover={{scale:1.2}}
+                                    whileTap={{scale:0.8}}
+                                >
+                                    DIZZYFIT
+                                </motion.h2>
+                            </Link>
+                            <Link href='/about'>
+                                <motion.div className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
+                                    whileHover={{scale:1.2}}
+                                    whileTap={{scale:0.8}}    
+                                >
+                                    About
+                                </motion.div>
+                            </Link>
+                            <Link href='/blog'>
+                                <motion.div className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
+                                    whileHover={{scale:1.2}}
+                                    whileTap={{scale:0.8}}    
+                                >
+                                    Blog
+                                </motion.div>
+                            </Link>
+                            <Link href='/privacy'>
+                                <motion.div className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
+                                    whileHover={{scale:1.2}}
+                                    whileTap={{scale:0.8}}    
+                                >
+                                    Privacy
+                                </motion.div>
+                            </Link>
+                            <Link href='/terms'>
+                                <motion.div  className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
+                                    whileHover={{scale:1.2}}
+                                    whileTap={{scale:0.8}}    
+                                >
+                                    Terms
+                                </motion.div>
+                            </Link>
                             <div className="flex flex-row space-x-8 items-center justify-between">
                                 <motion.a href="/" className='hover:text-red-600'
                                     whileHover={{scale:1.5}}
