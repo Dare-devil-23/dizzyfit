@@ -7,7 +7,7 @@ const Terms = () => {
 
       <p className="mx-5 mb-3 text-lg font-light text-gray-500 md:text-xl dark:text-zinc-400">Welcome to dizzyfit!</p>
 
-      <p className="mx-5 mb-3 text-lg font-light text-gray-500 md:text-xl dark:text-zinc-400">These terms and conditions outline the rules and regulations for the use of dizzyfit's Website, located at https://dizzyfit.surge.sh.</p>
+      <p className="mx-5 mb-3 text-lg font-light text-gray-500 md:text-xl dark:text-zinc-400">These terms and conditions outline the rules and regulations for the use of dizzyfit's Website, located at https://dizzyfit.vercel.app.</p>
 
       <p className="mx-5 mb-3 text-lg font-light text-gray-500 md:text-xl dark:text-zinc-400">By accessing this website we assume you accept these terms and conditions. Do not continue to use dizzyfit if you do not agree to take all of the terms and conditions stated on this page.</p>
 

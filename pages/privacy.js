@@ -5,7 +5,7 @@ const Privacy = () => {
     <div className='min-h-screen m-32 items-center'>
       <h1 className='text-3xl my-3'>Privacy Policy for dizzyfit</h1>
 
-      <p className="mx-5 mb-3 text-lg font-light text-gray-500 md:text-xl dark:text-zinc-400">At dizzyfit, accessible from https://diggyfit.surge.sh, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by dizzyfit and how we use it.</p>
+      <p className="mx-5 mb-3 text-lg font-light text-gray-500 md:text-xl dark:text-zinc-400">At dizzyfit, accessible from https://dizzyfit.vercel.app, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by dizzyfit and how we use it.</p>
 
       <p className="mx-5 mb-3 text-lg font-light text-gray-500 md:text-xl dark:text-zinc-400">If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 
