@@ -9,7 +9,7 @@ const About = () => {
       <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
         <div id="profile" className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-zinc-900 mx-6 lg:mx-0">
           <div className="p-4 md:p-12 text-center lg:text-left">
-            <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" >
+            <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 w-52 bg-cover bg-center" >
               <img src='desk.jpeg' />
             </div>
 
@@ -59,11 +59,10 @@ const About = () => {
               </a>
             </div>
           </div>
-
         </div>
 
-        <div className="w-full lg:w-2/5 hidden lg:block">
-          <img src="mobi.jpeg" className='rounded-lg' />
+        <div className="w-full h-4/5 lg:w-2/5 hidden lg:block">
+          <img src="mobi.jpeg" className='rounded-lg h-full' />
         </div>
 
       </div>
