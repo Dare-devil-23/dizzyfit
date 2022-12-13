@@ -53,7 +53,7 @@ export default function Footer() {
                                     whileHover={{scale:1.2}}
                                     whileTap={{scale:0.8}}    
                                 >
-                                    Privacy
+                                    Privacy Policy
                                 </motion.div>
                             </Link>
                             <Link href='/terms'>
@@ -61,7 +61,7 @@ export default function Footer() {
                                     whileHover={{scale:1.2}}
                                     whileTap={{scale:0.8}}    
                                 >
-                                    Terms
+                                    Terms of Service
                                 </motion.div>
                             </Link>
                             <div className="flex flex-row space-x-8 items-center justify-between">
