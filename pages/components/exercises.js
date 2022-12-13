@@ -61,7 +61,7 @@ const Exercises = ({ bodyPart, exercises, setExercises, currentPage, setCurrentP
                                             <span className="sr-only">Loading...</span>
                                         </div>
                                 </> :
-                                    <div className="rounded overflow-hidden shadow-lg bg-white text-black" key={exercise.id}>
+                                    <div className="rounded md:h-full overflow-hidden shadow-lg bg-white text-black" key={exercise.id}>
                                     <img className="w-full" src={exercise.image} alt={exercise.name} />
 
                                     <div className="px-6 py-4">

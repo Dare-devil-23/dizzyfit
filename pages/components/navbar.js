@@ -4,10 +4,6 @@ import Link from 'next/link'
 import { RiCloseFill, RiMenu2Fill } from 'react-icons/ri'
 
 export default function NavBar({ navbar, setNavbar }) {
-    useEffect(() => {
-      console.log(navbar)
-    }, [navbar])
-    
     return (
         <nav className='w-full text-white absolute z-10'>
             <div className="justify-between 2xl:text-2xl md:items-center md:flex md:px-8">

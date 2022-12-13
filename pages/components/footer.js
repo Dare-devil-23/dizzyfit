@@ -13,8 +13,8 @@ export default function Footer() {
                         </h1>
                     </div>
                     <div className="flex mt-8 flex-col md:flex-row md:justify-between">
-                        <p className="w-full md:w-2/3 text-gray-400">
-                            To ensure that all Wikipedia content is verifiable, anyone may question an uncited claim. If your work has been tagged
+                        <p className="w-full md:w-2/3 text-zinc-400 tracking-wide">
+                            We provide service informational purposes only. DIZZYFIT does not provide medical advice, diagnosis, or treatment. <Link href={'/terms'} className="underline">See additional information</Link>.
                         </p>
                         <div className="w-44 pt-6 md:pt-0" id="#contact">
                             <Link href="/contact" className="bg-red-600 hover:bg-red-500 justify-center text-center rounded-full shadow px-10 py-3 flex items-center">
@@ -33,7 +33,7 @@ export default function Footer() {
                                 </motion.h2>
                             </Link>
                             <Link href='/about'>
-                                <motion.div className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
+                                <motion.div className="hidden md:flex items-center cursor-pointer text-zinc-600 uppercase hover:text-red-600"
                                     whileHover={{scale:1.2}}
                                     whileTap={{scale:0.8}}    
                                 >
@@ -41,7 +41,7 @@ export default function Footer() {
                                 </motion.div>
                             </Link>
                             <Link href='/blog'>
-                                <motion.div className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
+                                <motion.div className="hidden md:flex items-center cursor-pointer text-zinc-600 uppercase hover:text-red-600"
                                     whileHover={{scale:1.2}}
                                     whileTap={{scale:0.8}}    
                                 >
@@ -49,7 +49,7 @@ export default function Footer() {
                                 </motion.div>
                             </Link>
                             <Link href='/privacy'>
-                                <motion.div className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
+                                <motion.div className="hidden md:flex items-center cursor-pointer text-zinc-600 uppercase hover:text-red-600"
                                     whileHover={{scale:1.2}}
                                     whileTap={{scale:0.8}}    
                                 >
@@ -57,7 +57,7 @@ export default function Footer() {
                                 </motion.div>
                             </Link>
                             <Link href='/terms'>
-                                <motion.div  className="hidden md:flex items-center cursor-pointer text-gray-600 uppercase hover:text-red-600"
+                                <motion.div  className="hidden md:flex items-center cursor-pointer text-zinc-600 uppercase hover:text-red-600"
                                     whileHover={{scale:1.2}}
                                     whileTap={{scale:0.8}}    
                                 >
@@ -85,8 +85,8 @@ export default function Footer() {
                                 </motion.a>
                             </div>
                         </div>
-                        <hr className="border-gray-600" />
-                        <p className="w-full text-center my-12 text-gray-600">Copyright © 2020 Daily Workouts</p>
+                        <hr className="border-zinc-600" />
+                        <p className="w-full text-center my-12 text-zinc-600">Copyright © 2020 DIZZYFIT</p>
                     </div>
                 </div>
             </div>
