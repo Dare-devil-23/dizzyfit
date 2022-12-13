@@ -19,7 +19,7 @@ const About = () => {
               <a className="h-4 fill-current text-red-600 pr-4">
                 <FaToolbox className="text-lg" />
               </a>Full Stack Developer</p>
-            <p className="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
+            <p className="pt-2 text-zinc-500 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
               <a className="h-4 fill-current text-red-600 pr-4">
                 <ImLocation2 className="text-lg" />
               </a>Location - 16.2379° N, 80.6444° E</p>
@@ -33,27 +33,27 @@ const About = () => {
 
             <div className="mt-6 pb-16 lg:pb-0 w-full justify-evenly text-2xl lg:w-full mx-auto flex flex-wrap items-center">
               <a className="link" href="#"  >
-                <span className="h-6 fill-current text-gray-600  hover:text-red-600" >
+                <span className="h-6 fill-current text-zinc-400  hover:text-red-600" >
                   <RiFacebookLine />
                 </span>
               </a>
               <a className="link" href="#"  >
-                <span className="h-6 fill-current text-gray-600  hover:text-red-600" >
+                <span className="h-6 fill-current text-zinc-400  hover:text-red-600" >
                   <RiInstagramLine />
                 </span>
               </a>
               <a className="link" href="#"  >
-                <span className="h-6 fill-current text-gray-600  hover:text-red-600" >
+                <span className="h-6 fill-current text-zinc-400  hover:text-red-600" >
                   <RiGithubLine />
                 </span>
               </a>
               <a className="link" href="#"  >
-                <span className="h-6 fill-current text-gray-600  hover:text-red-600" >
+                <span className="h-6 fill-current text-zinc-400  hover:text-red-600" >
                   <RiTwitterLine />
                 </span>
               </a>
               <a className="link" href="#"  >
-                <span className="h-6 fill-current text-gray-600  hover:text-red-600" >
+                <span className="h-6 fill-current text-zinc-400  hover:text-red-600" >
                   <RiTelegramLine />
                 </span>
               </a>
@@ -61,8 +61,8 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-full h-4/5 lg:w-2/5 hidden lg:block">
-          <img src="mobi.jpeg" className='rounded-lg h-full' />
+        <div className="w-full h-auto lg:w-2/5 hidden lg:block">
+          <img src="mobi.jpeg" className='rounded-lg' />
         </div>
 
       </div>

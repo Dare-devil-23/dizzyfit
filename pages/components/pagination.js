@@ -9,17 +9,17 @@ const Pagination = ({ cardsPerPage, totalCards, paginate, indexOfFirstCard , ind
 
         <nav className='flex justify-center'>
             <div className="flex flex-col items-center">
-                <span className="text-sm text-gray-700 dark:text-gray-400">
+                <span className="text-sm text-zinc-500">
                     Showing 
-                    <span className="font-semibold text-gray-900 dark:text-white">
+                    <span className="font-semibold text-white">
                         {` ${indexOfFirstCard + 1} `}
                     </span> 
                      to 
-                    <span className="font-semibold text-gray-900 dark:text-white">
+                    <span className="font-semibold text-white">
                         {` ${indexOfLastCard} `}
                     </span>
                      of 
-                    <span className="font-semibold text-gray-900 dark:text-white">
+                    <span className="font-semibold text-white">
                         {` ${totalCards} `}
                     </span> 
                      Entries
