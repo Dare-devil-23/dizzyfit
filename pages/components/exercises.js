@@ -8,7 +8,7 @@ const Exercises = ({ bodyPart, exercises, setExercises, currentPage, setCurrentP
         async function fetchData(){
             const response = await fetch('/api/exercises')
             const data = await response.json()
-            const result = searchResult.length ? searchResult : data.filter((exercise) => {
+            const result = searchResult.length ? searchResult : data?.filter((exercise) => {
                 return exercise.bodyPart === bodyPart ? exercise : ''
             })
             setExercises([...result])
@@ -30,17 +30,17 @@ const Exercises = ({ bodyPart, exercises, setExercises, currentPage, setCurrentP
 
     const indexOfLastCard = currentPage * cardsPerPage;
     const indexOfFirstCard = indexOfLastCard - cardsPerPage;
-    const currentCards = exercises.slice(indexOfFirstCard, indexOfLastCard);
+    const currentCards = exercises?.slice(indexOfFirstCard, indexOfLastCard);
     
     
     return (
         <div >
            {
-            exercises.length || bodyPart ?
+            exercises?.length || bodyPart ?
             <div>
-                <Pagination cardsPerPage={cardsPerPage} totalCards={exercises.length} paginate={paginate} currentPage={currentPage} indexOfFirstCard={indexOfFirstCard} indexOfLastCard={indexOfLastCard}/>
+                <Pagination cardsPerPage={cardsPerPage} totalCards={exercises?.length} paginate={paginate} currentPage={currentPage} indexOfFirstCard={indexOfFirstCard} indexOfLastCard={indexOfLastCard}/>
                 <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-                    {currentCards.map((exercise) => {
+                    {currentCards?.map((exercise) => {
                         return (
                             <div key={exercise.id}>
                             {
@@ -81,7 +81,7 @@ const Exercises = ({ bodyPart, exercises, setExercises, currentPage, setCurrentP
                         )
                     })}
                 </div>
-                <Pagination cardsPerPage={cardsPerPage} totalCards={exercises.length} paginate={paginate} currentPage={currentPage} indexOfFirstCard={indexOfFirstCard} indexOfLastCard={indexOfLastCard}/>
+                <Pagination cardsPerPage={cardsPerPage} totalCards={exercises?.length} paginate={paginate} currentPage={currentPage} indexOfFirstCard={indexOfFirstCard} indexOfLastCard={indexOfLastCard}/>
             </div>:
             <div className='h-fit justify-center flex flex-col items-center'>
                 <img src='/no-exercises.svg' alt='notfound' className='p-10'/>

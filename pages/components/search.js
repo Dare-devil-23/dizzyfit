@@ -7,7 +7,7 @@ const Search = ({bodyPart , setBodyPart , bodyParts , setCurrentPage , setSearch
         e.preventDefault();
         const response = await fetch('/api/exercises')
         const data = await response.json()
-        const result = data.filter((exercise)=>{
+        const result = data?.filter((exercise)=>{
             return(
                 exercise.bodyPart.includes(search)||
                 exercise.name.includes(search) ||
@@ -49,7 +49,7 @@ const Search = ({bodyPart , setBodyPart , bodyParts , setCurrentPage , setSearch
             <div className="md:w-1/2 p-5 md:mx-auto">
                 <div className="flex flex-wrap justify-center">
                     {
-                        bodyParts.map((part , i) => {
+                        bodyParts?.map((part , i) => {
                             return (
                                 <BodyPart key={i} part={part} bodyPart={bodyPart} setBodyPart={setBodyPart} setCurrentPage={setCurrentPage} setSearchResult={setSearchResult}/>
                             )
