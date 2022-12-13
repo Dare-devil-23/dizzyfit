@@ -11,16 +11,10 @@
   "dependencies": {
     "body-scroll-lock": "^4.0.0-beta.0",
     "framer-motion": "^7.6.7",
-    "git-scripts": "^0.6.4",
-    "graphql": "^16.6.0",
-    "graphql-request": "^5.0.0",
-    "html-react-parser": "^3.0.4",
-    "moment": "^2.29.4",
     "next": "13.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
-    "react-multi-carousel": "^2.8.2",
     "sass": "^1.56.1",
     "surge": "^0.23.1"
   },

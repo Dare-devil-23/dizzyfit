@@ -4,7 +4,7 @@ import { RiFacebookLine, RiInstagramLine, RiTwitterLine } from 'react-icons/ri'
 import Link  from 'next/link'
 export default function Footer() {
     return (
-        <div>
+        <div >
             <div className="w-full min-h-fit flex items-center justify-center bg-black">
                 <div className="mx-1 md:mx-20 my-10 w-full px-4 text-white flex flex-col">
                     <div className="w-full text-6xl font-bold">

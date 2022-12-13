@@ -26,7 +26,7 @@ const About = () => {
             <p className="pt-8 text-sm">Happiness is a by-product of an effort to make someone else happy.</p>
 
             <div className="pt-12 pb-8">
-              <Link href="/contact" className="bg-red-600 hover:bg-red-500 text-white font-bold py-4 px-4 rounded-full">
+              <Link href="/contact" className="bg-red-600 hover:bg-red-500 justify-center text-center rounded-full shadow px-10 py-3 flex items-center">
                 Get In Touch
               </Link>
             </div>
