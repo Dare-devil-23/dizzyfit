@@ -1,5 +1,7 @@
-import React, { use, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Pagination from './pagination';
+
+const IPFS_GATEWAY = 'https://ipfs.io/ipfs/';
 
 const Exercises = ({ bodyPart, exercises, setExercises, currentPage, setCurrentPage , searchResult }) => {
     const [cardsPerPage ] = useState(9)
@@ -32,7 +34,6 @@ const Exercises = ({ bodyPart, exercises, setExercises, currentPage, setCurrentP
     const indexOfFirstCard = indexOfLastCard - cardsPerPage;
     const currentCards = exercises?.slice(indexOfFirstCard, indexOfLastCard);
     
-    
     return (
         <div >
            {
@@ -62,7 +63,7 @@ const Exercises = ({ bodyPart, exercises, setExercises, currentPage, setCurrentP
                                         </div>
                                 </> :
                                     <div className="rounded md:h-full overflow-hidden shadow-lg bg-white text-black" key={exercise.id}>
-                                    <img className="w-full" src={exercise.image} alt={exercise.name} />
+                                    <img className="w-full" src={`${IPFS_GATEWAY}${exercise.image}`} alt={exercise.name} />
 
                                     <div className="px-6 py-4">
                                         <div className="font-bold text-xl mb-2">{exercise.name}</div>
